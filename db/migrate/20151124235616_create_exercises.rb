@@ -5,7 +5,7 @@ class CreateExercises < ActiveRecord::Migration
       t.string :image
       t.string :video
       t.text :description
-      t.references :BodyPart, index: true, foreign_key: true
+      t.references :body_part, index: true, foreign_key: true
 
       t.timestamps null: false
     end
