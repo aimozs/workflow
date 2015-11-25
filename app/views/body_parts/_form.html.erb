@@ -1,0 +1,13 @@
+<%= simple_form_for(@body_part) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :shape %>
+    <%= f.input :focus %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

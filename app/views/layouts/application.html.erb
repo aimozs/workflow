@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WorkFlow</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- allow mobile view on mobile -->
+<meta name="viewport" content="width=device-width", user-scalable="no", initial-scale=1>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+</head>
+<body>
+
+	<%= render "layouts/navbar" %>
+	<div class="row">
+		<div class="col-md-2">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- entropiaStatsLeft -->
+			<ins class="adsbygoogle"
+		    style="display:block"
+		    data-ad-client="ca-pub-1350672881569046"
+		    data-ad-slot="3694956653"
+		    data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div class="col-md-8">
+			<%= yield %>
+		</div>
+		<div class="col-md-2">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- entropiaStatsRight -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1350672881569046"
+     data-ad-slot="2578150259"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		</div>
+	</div>
+
+</body>
+</html>
