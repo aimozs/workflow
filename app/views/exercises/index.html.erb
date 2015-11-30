@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Exercises</h1>
+<h1>Listing Exercises</h1> <%= link_to '+', new_exercise_path, class="btn btn-warning" %>
 
 <table>
   <thead>
@@ -29,7 +29,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Exercise', new_exercise_path %>
